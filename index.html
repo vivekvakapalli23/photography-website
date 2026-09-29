@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- SEO Meta Tags -->
+    <title>Vivek Photography | Premium Luxury Photography Studio</title>
+    <meta name="description" content="Welcome to Vivek Photography, a world-class luxury photography studio specializing in cinematic weddings, portraits, baby shoots, events, and professional videos. Capturing moments, creating memories.">
+    <meta name="keywords" content="Vivek Photography, luxury photography, cinematic wedding photography, professional videos, portrait photography, baby shoot, premium photographer">
+    <meta name="author" content="Vivek Photography">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Vivek Photography | Premium Luxury Photography Studio">
+    <meta property="og:description" content="Experience world-class cinematic photography. Capturing raw emotion and timeless memories.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1519741497674-611481863552?w=1200&q=80">
+    <meta property="og:type" content="website">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome & CSS Stylesheets -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ===================== BOKEH BACKGROUND ===================== -->
+    <div class="bokeh-container">
+        <div class="bokeh-dot dot-1"></div>
+        <div class="bokeh-dot dot-2"></div>
+        <div class="bokeh-dot dot-3"></div>
+        <div class="bokeh-dot dot-4"></div>
+    </div>
+
+    <!-- ===================== PAGE LOADER ===================== -->
+    <div class="page-loader" id="pageLoader">
+        <div class="loader-content">
+            <div class="loader-logo-container">
+                <span class="logo-main">VIVEK</span>
+                <span class="logo-sub">PHOTOGRAPHY</span>
+            </div>
+            <div class="loader-bar">
+                <div class="loader-progress"></div>
+            </div>
+            <p class="loader-text">Loading Cinematic Experience...</p>
+        </div>
+    </div>
+
+    <!-- ===================== HEADER & NAVBAR ===================== -->
+    <header class="navbar-header" id="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="nav-logo">
+                <span class="logo-v">V</span><span class="logo-text">IVEK</span>
+                <span class="logo-subtitle">PHOTOGRAPHY</span>
+            </a>
+            
+            <nav class="nav-menu" id="navMenu">
+                <ul class="nav-links">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="services.html" class="nav-link">Services</a></li>
+                    <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                    <li><a href="index.html#reviews" class="nav-link">Reviews</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-right">
+                <a href="contact.html" class="btn btn-gold btn-book-now">
+                    <span class="btn-text">Book Now</span>
+                    <span class="btn-glow"></span>
+                </a>
+                <button class="hamburger-btn" id="hamburgerBtn" aria-label="Toggle Navigation Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- ===================== HERO SECTION ===================== -->
+    <section class="hero-section" id="home">
+        <div class="container hero-container">
+            <div class="hero-grid">
+                <!-- Left side -->
+                <div class="hero-left-content reveal-on-load">
+                    <div class="welcome-badge">
+                        <span class="badge-line"></span>
+                        <span class="badge-text">Welcome To The Art of Light</span>
+                    </div>
+                    <h1 class="hero-title">
+                        Vivek <span class="text-gold">Photography</span>
+                    </h1>
+                    <p class="hero-tagline">“Capturing Moments, Creating Memories”</p>
+                    <p class="hero-desc">
+                        A world-class photography studio dedicated to storytelling through premium, luxury visuals. We craft cinematic narratives that immortalize your most precious milestones with timeless elegance and artistic precision.
+                    </p>
+                    <div class="hero-ctas">
+                        <a href="services.html" class="btn btn-gold-filled">
+                            <span>Our Services</span>
+                        </a>
+                        <a href="gallery.html" class="btn btn-gold-outline">
+                            <span>View Gallery</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Right side -->
+                <div class="hero-right-content reveal-on-load delay-200">
+                    <div class="camera-image-wrapper">
+                        <div class="glow-ring"></div>
+                        <img src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?w=800&q=80" alt="Professional cinematic DSLR camera with beautiful studio lighting" class="hero-camera-img">
+                        
+                        <!-- Floating social media icons -->
+                        <div class="floating-socials">
+                            <a href="https://facebook.com" target="_blank" class="social-icon" aria-label="Facebook">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="https://instagram.com" target="_blank" class="social-icon" aria-label="Instagram">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="https://wa.me/919390262788" target="_blank" class="social-icon" aria-label="WhatsApp">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
+                            <a href="tel:+919390262788" class="social-icon" aria-label="Call Us">
+                                <i class="fas fa-phone-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom statistics -->
+            <div class="hero-stats-wrapper reveal-on-load delay-400">
+                <div class="stat-item">
+                    <div class="stat-icon-box">
+                        <i class="fas fa-images"></i>
+                    </div>
+                    <div class="stat-info">
+                        <span class="stat-number" data-target="500">0</span><span class="stat-plus">+</span>
+                        <span class="stat-label">Projects Done</span>
+                    </div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon-box">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <div class="stat-info">
+                        <span class="stat-number" data-target="400">0</span><span class="stat-plus">+</span>
+                        <span class="stat-label">Happy Clients</span>
+                    </div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon-box">
+                        <i class="fas fa-camera"></i>
+                    </div>
+                    <div class="stat-info">
+                        <span class="stat-number" data-target="5">0</span><span class="stat-plus">+</span>
+                        <span class="stat-label">Years Experience</span>
+                    </div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon-box">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <div class="stat-info">
+                        <span class="stat-number" data-target="15">0</span><span class="stat-plus">+</span>
+                        <span class="stat-label">Awards Won</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <a href="#about" class="scroll-down-indicator" aria-label="Scroll Down">
+            <span class="mouse-icon">
+                <span class="wheel"></span>
+            </span>
+            <span class="arrow-down"><i class="fas fa-chevron-down"></i></span>
+        </a>
+    </section>
+
+    <!-- ===================== ABOUT SECTION ===================== -->
+    <section class="about-section" id="about">
+        <div class="container">
+            <div class="about-grid">
+                <!-- Left: Portrait with golden border -->
+                <div class="about-left-image reveal-on-scroll">
+                    <div class="portrait-frame">
+                        <div class="frame-border-outer"></div>
+                        <div class="frame-border-inner"></div>
+                        <img src="c.png.png" alt="Vivek - Professional Portrait Photographer" class="about-portrait-img">
+                    </div>
+                </div>
+
+                <!-- Right: Content -->
+                <div class="about-right-content reveal-on-scroll">
+                    <div class="section-tag-wrapper">
+                        <span class="gold-line"></span>
+                        <span class="section-tag-text text-gold">About Me</span>
+                    </div>
+                    <h2 class="section-title">I'm <span class="text-gold">Vivek</span></h2>
+                    
+                    <p class="about-story">
+                        My journey behind the lens began with a simple fascination: how a single, fleeting second of light could be caught and saved forever. Over the last five years, this fascination has matured into a dedication to premium visual storytelling.
+                    </p>
+                    <p class="about-story">
+                        I believe that luxury photography isn't just about high-resolution equipment; it's about anticipation, composition, and emotional resonance. Whether framing a quiet look between a bride and groom or capturing the dynamic energy of a major celebration, my team and I work to reveal the absolute beauty of every scene.
+                    </p>
+                    
+                    <div class="signature-container">
+                        <div class="signature-style">Vivek Photography</div>
+                        <p class="signature-title">Lead Artist & Founder</p>
+                    </div>
+
+                    <a href="about.html" class="btn btn-gold-filled about-btn">
+                        <span>Read More Story</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== SERVICES SECTION ===================== -->
+    <section class="services-section" id="services">
+        <div class="container">
+            <div class="section-header-centered reveal-on-scroll">
+                <div class="section-tag-wrapper centered">
+                    <span class="gold-line"></span>
+                    <span class="section-tag-text text-gold">What We Do</span>
+                    <span class="gold-line"></span>
+                </div>
+                <h2 class="section-title centered">Our Premium <span class="text-gold">Services</span></h2>
+                <p class="section-subtitle">Tailored packages designed for those who appreciate the finer details of mastercraft photography.</p>
+            </div>
+
+            <div class="services-grid">
+                <!-- Card 1 -->
+                <div class="service-glass-card reveal-on-scroll" data-delay="0">
+                    <div class="service-card-bg" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYEv-wy9XfmGGggviuxtPTa0UxT6zV1l0nwh3_U5o4XkkK24WRvCDZS73f&s=10')"></div>
+                    <div class="service-card-overlay"></div>
+                    <div class="service-card-content">
+                        <div class="service-icon-box">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <h3 class="service-title">Wedding Photography</h3>
+                        <p class="service-text">Elegant, candid, and cinematic documentation of your special day. We preserve your raw feelings and vows in beautiful visual layouts.</p>
+                        <ul class="service-highlights">
+                            <li><i class="fas fa-check text-gold"></i> Full Day Coverage</li>
+                            <li><i class="fas fa-check text-gold"></i> High-End Editing & Retouching</li>
+                            <li><i class="fas fa-check text-gold"></i> Luxury Leather-Bound Album</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="service-glass-card reveal-on-scroll" data-delay="150">
+                    <div class="service-card-bg" style="background-image: url('https://images.unsplash.com/photo-1519689680058-324335c77eba?w=800&q=80')"></div>
+                    <div class="service-card-overlay"></div>
+                    <div class="service-card-content">
+                        <div class="service-icon-box">
+                            <i class="fas fa-baby"></i>
+                        </div>
+                        <h3 class="service-title">Baby Shoot</h3>
+                        <p class="service-text">Delightful, cozy, and highly creative newborn and toddler photography. We provide a safe, warm, and themed studio setup.</p>
+                        <ul class="service-highlights">
+                            <li><i class="fas fa-check text-gold"></i> Custom Studio Props</li>
+                            <li><i class="fas fa-check text-gold"></i> Patient & Gentle Pacing</li>
+                            <li><i class="fas fa-check text-gold"></i> Family Portrait Inclusion</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="service-glass-card reveal-on-scroll" data-delay="300">
+                    <div class="service-card-bg" style="background-image: url('https://images.unsplash.com/photo-1511578314322-379afb476865?w=800&q=80')"></div>
+                    <div class="service-card-overlay"></div>
+                    <div class="service-card-content">
+                        <div class="service-icon-box">
+                            <i class="fas fa-calendar-alt"></i>
+                        </div>
+                        <h3 class="service-title">Events Photography</h3>
+                        <p class="service-text">Elite coverage of corporate conferences, luxury fashion shows, milestones, and high-society private parties.</p>
+                        <ul class="service-highlights">
+                            <li><i class="fas fa-check text-gold"></i> Rapid Turnaround Time</li>
+                            <li><i class="fas fa-check text-gold"></i> Candid Guest Captures</li>
+                            <li><i class="fas fa-check text-gold"></i> Professional Drone Options</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="service-glass-card reveal-on-scroll" data-delay="450">
+                    <div class="service-card-bg" style="background-image: url('https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?w=800&q=80')"></div>
+                    <div class="service-card-overlay"></div>
+                    <div class="service-card-content">
+                        <div class="service-icon-box">
+                            <i class="fas fa-video"></i>
+                        </div>
+                        <h3 class="service-title">Professional Videos</h3>
+                        <p class="service-text">Cinematic videos, commercial teasers, and high-definition documentaries filmed in 4K with premium audio tracking.</p>
+                        <ul class="service-highlights">
+                            <li><i class="fas fa-check text-gold"></i> Cinematic Gimbal Shots</li>
+                            <li><i class="fas fa-check text-gold"></i> Professional Color Grading</li>
+                            <li><i class="fas fa-check text-gold"></i> Sound Design & Licensing</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="services-cta-wrapper reveal-on-scroll">
+                <a href="services.html" class="btn btn-gold-filled">
+                    <span>View All Services</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== GALLERY SECTION ===================== -->
+    <section class="gallery-section" id="gallery">
+        <div class="container">
+            <div class="section-header-centered reveal-on-scroll">
+                <div class="section-tag-wrapper centered">
+                    <span class="gold-line"></span>
+                    <span class="section-tag-text text-gold">Portfolio</span>
+                    <span class="gold-line"></span>
+                </div>
+                <h2 class="section-title centered">The Luxury <span class="text-gold">Gallery</span></h2>
+                <p class="section-subtitle">Take a journey through our curated catalog of captured moments, elegant portraits, and weddings.</p>
+            </div>
+
+            <!-- Categories Filter -->
+            <div class="gallery-filters reveal-on-scroll">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="wedding">Wedding</button>
+                <button class="filter-btn" data-filter="portrait">Portrait</button>
+                <button class="filter-btn" data-filter="events">Events</button>
+                <button class="filter-btn" data-filter="baby">Baby Shoot</button>
+                <button class="filter-btn" data-filter="videos">Videos</button>
+            </div>
+
+            <!-- Portfolio Grid -->
+            <div class="gallery-grid reveal-on-scroll">
+                <!-- Item 1: Wedding -->
+                <div class="gallery-item" data-category="wedding">
+                    <div class="gallery-card-inner">
+                        <img src="https://images.unsplash.com/photo-1532712938310-34cb3982ef74?w=800&q=80" alt="Wedding celebration - Golden hour embrace">
+                        <div class="gallery-card-overlay">
+                            <span class="gallery-card-cat">Wedding</span>
+                            <h4 class="gallery-card-title">Golden Hour Embrace</h4>
+                            <div class="zoom-icon-box">
+                                <i class="fas fa-expand-alt"></i>
+                            </div>
+                        </div>
+                        <div class="card-border-glow"></div>
+                    </div>
+                </div>
+
+                <!-- Item 2: Portrait -->
+                <div class="gallery-item" data-category="portrait">
+                    <div class="gallery-card-inner">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&q=80" alt="Elegant portrait photography">
+                        <div class="gallery-card-overlay">
+                            <span class="gallery-card-cat">Portrait</span>
+                            <h4 class="gallery-card-title">Classic Monochromatic</h4>
+                            <div class="zoom-icon-box">
+                                <i class="fas fa-expand-alt"></i>
+                            </div>
+                        </div>
+                        <div class="card-border-glow"></div>
+                    </div>
+                </div>
+
+                <!-- Item 3: Events -->
+                <div class="gallery-item" data-category="events">
+                    <div class="gallery-card-inner">
+                        <img src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=800&q=80" alt="Glow of performance lights">
+                        <div class="gallery-card-overlay">
+                            <span class="gallery-card-cat">Events</span>
+                            <h4 class="gallery-card-title">Concert Glow</h4>
+                            <div class="zoom-icon-box">
+                                <i class="fas fa-expand-alt"></i>
+                            </div>
+                        </div>
+                        <div class="card-border-glow"></div>
+                    </div>
+                </div>
+
+                <!-- Item 4: Baby -->
+                <div class="gallery-item" data-category="baby">
+                    <div class="gallery-card-inner">
+                        <img src="https://images.unsplash.com/photo-1502086223501-7ea6ecd79368?w=800&q=80" alt="Baby photoshoot details">
+                        <div class="gallery-card-overlay">
+                            <span class="gallery-card-cat">Baby Shoot</span>
+                            <h4 class="gallery-card-title">Pure Innocence</h4>
+                            <div class="zoom-icon-box">
+                                <i class="fas fa-expand-alt"></i>
+                            </div>
+                        </div>
+                        <div class="card-border-glow"></div>
+                    </div>
+                </div>
+
+                <!-- Item 5: Videos -->
+                <div class="gallery-item" data-category="videos">
+                    <div class="gallery-card-inner">
+                        <img src="https://images.unsplash.com/photo-1485846234645-a62644f84728?w=800&q=80" alt="Behind the camera preview">
+                        <div class="gallery-card-overlay">
+                            <span class="gallery-card-cat">Videos</span>
+                            <h4 class="gallery-card-title">Cinematic Lens Test</h4>
+                            <div class="zoom-icon-box">
+                                <i class="fas fa-play-circle"></i>
+                            </div>
+                        </div>
+                        <div class="card-border-glow"></div>
+                    </div>
+                </div>
+
+                <!-- Item 6: Wedding -->
+                <div class="gallery-item" data-category="wedding">
+                    <div class="gallery-card-inner">
+                        <img src="https://images.unsplash.com/photo-1519225495810-7512c696505a?w=800&q=80" alt="Happy wedding ceremony moments">
+                        <div class="gallery-card-overlay">
+                            <span class="gallery-card-cat">Wedding</span>
+                            <h4 class="gallery-card-title">Timeless Vows</h4>
+                            <div class="zoom-icon-box">
+                                <i class="fas fa-expand-alt"></i>
+                            </div>
+                        </div>
+                        <div class="card-border-glow"></div>
+                    </div>
+                </div>
+
+                <!-- Item 7: Portrait -->
+                <div class="gallery-item" data-category="portrait">
+                    <div class="gallery-card-inner">
+                        <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=800&q=80" alt="Moody sunset portrait of a woman">
+                        <div class="gallery-card-overlay">
+                            <span class="gallery-card-cat">Portrait</span>
+                            <h4 class="gallery-card-title">Sunset Reflection</h4>
+                            <div class="zoom-icon-box">
+                                <i class="fas fa-expand-alt"></i>
+                            </div>
+                        </div>
+                        <div class="card-border-glow"></div>
+                    </div>
+                </div>
+
+                <!-- Item 8: Events -->
+                <div class="gallery-item" data-category="events">
+                    <div class="gallery-card-inner">
+                        <img src="https://images.unsplash.com/photo-1501281668745-f7f57925c3b4?w=800&q=80" alt="Celebration event atmosphere">
+                        <div class="gallery-card-overlay">
+                            <span class="gallery-card-cat">Events</span>
+                            <h4 class="gallery-card-title">Grand Gala Toast</h4>
+                            <div class="zoom-icon-box">
+                                <i class="fas fa-expand-alt"></i>
+                            </div>
+                        </div>
+                        <div class="card-border-glow"></div>
+                    </div>
+                </div>
+
+                <!-- Item 9: Baby -->
+                <div class="gallery-item" data-category="baby">
+                    <div class="gallery-card-inner">
+                        <img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=800&q=80" alt="Cute newborn setup">
+                        <div class="gallery-card-overlay">
+                            <span class="gallery-card-cat">Baby Shoot</span>
+                            <h4 class="gallery-card-title">Tiny Dreams</h4>
+                            <div class="zoom-icon-box">
+                                <i class="fas fa-expand-alt"></i>
+                            </div>
+                        </div>
+                        <div class="card-border-glow"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- View Full Gallery CTA -->
+            <div class="gallery-cta-wrapper reveal-on-scroll">
+                <a href="gallery.html" class="btn btn-gold-outline">
+                    <span>View Full Gallery</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== LIGHTBOX MODAL ===================== -->
+    <div class="lightbox-modal" id="lightbox">
+        <button class="lightbox-btn close-btn" id="closeLightbox" aria-label="Close Lightbox">
+            <i class="fas fa-times"></i>
+        </button>
+        <button class="lightbox-btn prev-btn" id="prevLightbox" aria-label="Previous Image">
+            <i class="fas fa-chevron-left"></i>
+        </button>
+        <button class="lightbox-btn next-btn" id="nextLightbox" aria-label="Next Image">
+            <i class="fas fa-chevron-right"></i>
+        </button>
+        
+        <div class="lightbox-img-container">
+            <img src="" alt="" id="lightboxImg">
+            <div class="lightbox-caption">
+                <span id="lightboxCategory" class="text-gold">Category</span>
+                <h3 id="lightboxTitle">Image Title</h3>
+            </div>
+        </div>
+        <div class="lightbox-counter" id="lightboxCounter">1 / 9</div>
+    </div>
+
+    <!-- ===================== REVIEWS SECTION ===================== -->
+    <section class="reviews-section" id="reviews">
+        <div class="container">
+            <div class="section-header-centered reveal-on-scroll">
+                <div class="section-tag-wrapper centered">
+                    <span class="gold-line"></span>
+                    <span class="section-tag-text text-gold">Testimonials</span>
+                    <span class="gold-line"></span>
+                </div>
+                <h2 class="section-title centered">Client <span class="text-gold">Reviews</span></h2>
+                <p class="section-subtitle">Real experiences and feedback shared by couples and brands who trusted our lens.</p>
+            </div>
+
+            <!-- Slider Wrapper -->
+            <div class="testimonial-slider-container reveal-on-scroll">
+                <div class="testimonial-slider" id="testimonialSlider">
+                    
+                    <!-- Slide 1 -->
+                    <div class="testimonial-slide active">
+                        <div class="review-glass-card">
+                            <div class="quote-icon"><i class="fas fa-quote-right"></i></div>
+                            <div class="rating-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="review-content">
+                                "Vivek and his team photographed our wedding in early spring, and we were blown away by the results. They managed to capture the real intimacy and joy of the ceremony without ever feeling intrusive. The final luxury album is a treasure we'll keep forever!"
+                            </p>
+                            <div class="client-info">
+                                <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&q=80" alt="Kavya Sen" class="client-avatar">
+                                <div class="client-details">
+                                    <h4 class="client-name">Kavya & Rohan</h4>
+                                    <p class="client-role">Wedding Couple</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 2 -->
+                    <div class="testimonial-slide">
+                        <div class="review-glass-card">
+                            <div class="quote-icon"><i class="fas fa-quote-right"></i></div>
+                            <div class="rating-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="review-content">
+                                "We commissioned Vivek Photography for our annual luxury watch brand launch event. The clarity, the colors, and the speed at which they delivered the high-resolution edited shots were top-tier. Extremely professional service."
+                            </p>
+                            <div class="client-info">
+                                <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=150&q=80" alt="Mark Alistair" class="client-avatar">
+                                <div class="client-details">
+                                    <h4 class="client-name">Alistair & Co.</h4>
+                                    <p class="client-role">Corporate Client</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 3 -->
+                    <div class="testimonial-slide">
+                        <div class="review-glass-card">
+                            <div class="quote-icon"><i class="fas fa-quote-right"></i></div>
+                            <div class="rating-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="review-content">
+                                "The baby shoot was fantastic. Vivek was so patient, keeping the studio warm and adjusting to my newborn's schedule. The portraits are stunningly beautiful, with soft cinematic gold highlights that feel so precious."
+                            </p>
+                            <div class="client-info">
+                                <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&q=80" alt="Sophia D'Souza" class="client-avatar">
+                                <div class="client-details">
+                                    <h4 class="client-name">Sophia D'Souza</h4>
+                                    <p class="client-role">Mother</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slider Controls -->
+                <div class="slider-controls">
+                    <button class="slider-arrow prev" id="sliderPrev"><i class="fas fa-arrow-left"></i></button>
+                    <div class="slider-dots" id="sliderDots">
+                        <span class="dot active" data-index="0"></span>
+                        <span class="dot" data-index="1"></span>
+                        <span class="dot" data-index="2"></span>
+                    </div>
+                    <button class="slider-arrow next" id="sliderNext"><i class="fas fa-arrow-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== CONTACT SECTION ===================== -->
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <div class="contact-grid">
+                <!-- Left Content -->
+                <div class="contact-left-details reveal-on-scroll">
+                    <div class="section-tag-wrapper">
+                        <span class="gold-line"></span>
+                        <span class="section-tag-text text-gold">Let's Connect</span>
+                    </div>
+                    <h2 class="contact-headline">Let's Create <span class="text-gold">Something Beautiful</span> Together</h2>
+                    <p class="contact-desc">
+                        Ready to frame your story with luxury visuals? Get in touch using the details below or fill out the booking form, and we will reply to coordinate your personalized session details.
+                    </p>
+
+                    <!-- Contact Details Card -->
+                    <div class="contact-details-box">
+                        <div class="contact-info-item">
+                            <div class="info-icon"><i class="fas fa-phone-alt"></i></div>
+                            <div class="info-text">
+                                <span class="info-label">Call or Text</span>
+                                <a href="tel:+919390262788" class="info-val">+91 93902 62788</a>
+                            </div>
+                        </div>
+                        <div class="contact-info-item">
+                            <div class="info-icon"><i class="fas fa-envelope"></i></div>
+                            <div class="info-text">
+                                <span class="info-label">E-Mail Address</span>
+                                <a href="mailto:vivekvakapalli23@gmail.com" class="info-val">vivekvakapalli23@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-info-item">
+                            <div class="info-icon"><i class="fas fa-map-marker-alt"></i></div>
+                            <div class="info-text">
+                                <span class="info-label">Studio Address</span>
+                                <span class="info-val">Banjara Hills Road No. 2, Hyderabad, TS, India</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Form & Image overlay -->
+                <div class="contact-right-form reveal-on-scroll">
+                    <div class="contact-form-wrapper">
+                        <div class="form-bg-image" style="background-image: url('https://images.unsplash.com/photo-1452780212940-6f5c0d14d84a?w=800&q=80')"></div>
+                        <div class="form-glass-overlay"></div>
+                        
+                        <form id="contactForm" class="contact-form">
+                            <h3 class="form-title">Coordinate Your Session</h3>
+                            
+                            <div class="form-group">
+                                <label for="name">Your Name</label>
+                                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                                <span class="error-msg" id="nameError">Name is required</span>
+                            </div>
+
+                            <div class="form-group-row">
+                                <div class="form-group">
+                                    <label for="email">E-mail</label>
+                                    <input type="email" id="email" name="email" placeholder="example@domain.com" required>
+                                    <span class="error-msg" id="emailError">Valid email is required</span>
+                                </div>
+                                <div class="form-group">
+                                    <label for="phone">Phone Number</label>
+                                    <input type="tel" id="phone" name="phone" placeholder="+91 93902 62788" required>
+                                    <span class="error-msg" id="phoneError">Phone number is required</span>
+                                </div>
+                            </div>
+
+                            <div class="form-group-row">
+                                <div class="form-group">
+                                    <label for="sessionType">Session Type</label>
+                                    <select id="sessionType" name="sessionType" required>
+                                        <option value="" disabled selected>Select service</option>
+                                        <option value="wedding">Wedding Photography</option>
+                                        <option value="baby">Baby Shoot</option>
+                                        <option value="events">Events Photography</option>
+                                        <option value="videos">Professional Videos</option>
+                                    </select>
+                                    <span class="error-msg" id="typeError">Please select a session type</span>
+                                </div>
+                                <div class="form-group">
+                                    <label for="date">Preferred Date</label>
+                                    <input type="date" id="date" name="date" required>
+                                    <span class="error-msg" id="dateError">Please pick a date</span>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message">Share Your Vision (Optional)</label>
+                                <textarea id="message" name="message" rows="3" placeholder="Tell us about your event theme, locations, or details..."></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-gold-filled form-submit-btn">
+                                <span class="submit-text">Submit Request</span>
+                                <span class="submit-spinner"><i class="fas fa-circle-notch fa-spin"></i></span>
+                            </button>
+                        </form>
+
+                        <!-- Toast success dialog -->
+                        <div class="toast-success" id="toastSuccess">
+                            <div class="toast-icon"><i class="fas fa-check-circle"></i></div>
+                            <h3>Request Received!</h3>
+                            <p>Thank you. We will reach out to you within 24 hours to coordinate your booking details.</p>
+                            <button class="btn btn-gold btn-sm" id="closeToast">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== FOOTER ===================== -->
+    <footer class="luxury-footer">
+        <div class="container footer-container">
+            <div class="footer-grid">
+                <!-- Branding info -->
+                <div class="footer-col branding">
+                    <a href="#home" class="footer-logo">
+                        <span class="logo-v">V</span><span class="logo-text">IVEK</span>
+                        <span class="logo-subtitle">PHOTOGRAPHY</span>
+                    </a>
+                    <p class="footer-desc">
+                        A high-end international photography brand creating stunning imagery that stands the test of time. 
+                    </p>
+                    <div class="footer-socials">
+                        <a href="https://facebook.com" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://wa.me/919390262788" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                        <a href="mailto:vivekvakapalli23@gmail.com" aria-label="Email"><i class="far fa-envelope"></i></a>
+                    </div>
+                </div>
+
+                 <!-- Navigation Quick Links -->
+                <div class="footer-col links">
+                    <h4 class="footer-title">Quick Navigation</h4>
+                    <ul class="footer-links-list">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="index.html#reviews">Reviews</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Studio Hours -->
+                <div class="footer-col hours">
+                    <h4 class="footer-title">Studio Hours</h4>
+                    <ul class="footer-hours-list">
+                        <li><span class="day">Monday - Friday:</span> <span class="time">09:00 AM - 08:00 PM</span></li>
+                        <li><span class="day">Saturday:</span> <span class="time">10:00 AM - 06:00 PM</span></li>
+                        <li><span class="day">Sunday:</span> <span class="time">By Appointment Only</span></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Copyright area -->
+            <div class="footer-bottom">
+                <p class="copyright-text">
+                    &copy; 2026 Vivek Photography. All Rights Reserved. Designed for premium cinematic luxury.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ===================== FLOATING WHATSAPP WIDGET ===================== -->
+    <a href="https://wa.me/919390262788?text=Hello%20Vivek%20Photography,%20I'd%20love%20to%20inquire%20about%20booking%20a%20shoot!" target="_blank" class="whatsapp-float" aria-label="Chat with Vivek on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+        <span class="tooltip-text">Chat with Vivek</span>
+    </a>
+
+    <!-- ===================== JS SCRIPTS ===================== -->
+    <script src="script.js"></script>
+</body>
+</html>

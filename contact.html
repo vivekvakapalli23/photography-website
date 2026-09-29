@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- SEO Meta Tags -->
+    <title>Contact & Booking | Vivek Photography</title>
+    <meta name="description" content="Get in touch with Vivek Photography. Book your custom session, locate our Banjara Hills studio, or read our FAQs.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome & CSS Stylesheets -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ===================== BOKEH BACKGROUND ===================== -->
+    <div class="bokeh-container">
+        <div class="bokeh-dot dot-1"></div>
+        <div class="bokeh-dot dot-3"></div>
+        <div class="bokeh-dot dot-4"></div>
+    </div>
+
+    <!-- ===================== PAGE LOADER ===================== -->
+    <div class="page-loader" id="pageLoader">
+        <div class="loader-content">
+            <div class="loader-logo-container">
+                <span class="logo-main">VIVEK</span>
+                <span class="logo-sub">PHOTOGRAPHY</span>
+            </div>
+            <div class="loader-bar">
+                <div class="loader-progress"></div>
+            </div>
+            <p class="loader-text">Loading Contact Experience...</p>
+        </div>
+    </div>
+
+    <!-- ===================== HEADER & NAVBAR ===================== -->
+    <header class="navbar-header" id="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="nav-logo">
+                <span class="logo-v">V</span><span class="logo-text">IVEK</span>
+                <span class="logo-subtitle">PHOTOGRAPHY</span>
+            </a>
+            
+            <nav class="nav-menu" id="navMenu">
+                <ul class="nav-links">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="services.html" class="nav-link">Services</a></li>
+                    <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                    <li><a href="index.html#reviews" class="nav-link">Reviews</a></li>
+                    <li><a href="contact.html" class="nav-link active">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-right">
+                <a href="contact.html" class="btn btn-gold btn-book-now">
+                    <span class="btn-text">Book Now</span>
+                    <span class="btn-glow"></span>
+                </a>
+                <button class="hamburger-btn" id="hamburgerBtn" aria-label="Toggle Navigation Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- ===================== PAGE BANNER ===================== -->
+    <section class="page-banner">
+        <div class="container page-banner-content">
+            <h1 class="page-banner-title">Let's <span class="text-gold">Connect</span></h1>
+            <div class="breadcrumbs">
+                <a href="index.html">Home</a>
+                <span class="separator"><i class="fas fa-chevron-right"></i></span>
+                <span>Contact</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== CONTACT SECTION ===================== -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-grid">
+                <!-- Left Details -->
+                <div class="contact-left-details reveal-on-scroll">
+                    <div class="section-tag-wrapper">
+                        <span class="gold-line"></span>
+                        <span class="section-tag-text text-gold">Get In Touch</span>
+                    </div>
+                    <h2 class="contact-headline">Let's Create <span class="text-gold">Something Beautiful</span> Together</h2>
+                    <p class="contact-desc">
+                        Ready to document your story with luxury visuals? Get in touch using the details below or fill out the booking form, and we will coordinate your personalized session details.
+                    </p>
+
+                    <!-- Details Card -->
+                    <div class="contact-details-box">
+                        <div class="contact-info-item">
+                            <div class="info-icon"><i class="fas fa-phone-alt"></i></div>
+                            <div class="info-text">
+                                <span class="info-label">Call or Text</span>
+                                <a href="tel:+919390262788" class="info-val">+91 93902 62788</a>
+                            </div>
+                        </div>
+                        <div class="contact-info-item">
+                            <div class="info-icon"><i class="fas fa-envelope"></i></div>
+                            <div class="info-text">
+                                <span class="info-label">E-Mail Address</span>
+                                <a href="mailto:vivekvakapalli23@gmail.com" class="info-val">vivekvakapalli23@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-info-item">
+                            <div class="info-icon"><i class="fas fa-map-marker-alt"></i></div>
+                            <div class="info-text">
+                                <span class="info-label">Studio Location</span>
+                                <span class="info-val">Banjara Hills Road No. 2, Hyderabad, TS, India</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Form -->
+                <div class="contact-right-form reveal-on-scroll">
+                    <div class="contact-form-wrapper">
+                        <div class="form-bg-image" style="background-image: url('https://images.unsplash.com/photo-1452780212940-6f5c0d14d84a?w=800&q=80')"></div>
+                        <div class="form-glass-overlay"></div>
+                        
+                        <form id="contactForm" class="contact-form">
+                            <h3 class="form-title">Coordinate Your Session</h3>
+                            
+                            <div class="form-group">
+                                <label for="name">Your Name</label>
+                                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                                <span class="error-msg" id="nameError">Name is required</span>
+                            </div>
+
+                            <div class="form-group-row">
+                                <div class="form-group">
+                                    <label for="email">E-mail</label>
+                                    <input type="email" id="email" name="email" placeholder="example@domain.com" required>
+                                    <span class="error-msg" id="emailError">Valid email is required</span>
+                                </div>
+                                <div class="form-group">
+                                    <label for="phone">Phone Number</label>
+                                    <input type="tel" id="phone" name="phone" placeholder="+91 93902 62788" required>
+                                    <span class="error-msg" id="phoneError">Phone number is required</span>
+                                </div>
+                            </div>
+
+                            <div class="form-group-row">
+                                <div class="form-group">
+                                    <label for="sessionType">Session Type</label>
+                                    <select id="sessionType" name="sessionType" required>
+                                        <option value="" disabled selected>Select service</option>
+                                        <option value="wedding">Wedding Photography</option>
+                                        <option value="baby">Baby Shoot</option>
+                                        <option value="events">Events Photography</option>
+                                        <option value="videos">Professional Videos</option>
+                                    </select>
+                                    <span class="error-msg" id="typeError">Please select a session type</span>
+                                </div>
+                                <div class="form-group">
+                                    <label for="date">Preferred Date</label>
+                                    <input type="date" id="date" name="date" required>
+                                    <span class="error-msg" id="dateError">Please pick a date</span>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message">Share Your Vision (Optional)</label>
+                                <textarea id="message" name="message" rows="3" placeholder="Tell us about your event theme, locations, or details..."></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-gold-filled form-submit-btn">
+                                <span class="submit-text">Submit Request</span>
+                                <span class="submit-spinner"><i class="fas fa-circle-notch fa-spin"></i></span>
+                            </button>
+                        </form>
+
+                        <!-- Toast Success dialog -->
+                        <div class="toast-success" id="toastSuccess">
+                            <div class="toast-icon"><i class="fas fa-check-circle"></i></div>
+                            <h3>Request Received!</h3>
+                            <p>Thank you. We will reach out to you  to coordinate your booking details.</p>
+                            <button class="btn btn-gold btn-sm" id="closeToast">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== MAP SECTION ===================== -->
+    <section class="map-section reveal-on-scroll" style="padding: 0; height: 450px;">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3807.251478148908!2d78.44186597593685!3d17.423719001777274!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9736c4b1262d%3A0xe54d924dc9075775!2sRoad%20No.%202%2C%20Banjara%20Hills%2C%20Hyderabad%2C%20Telangana!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </section>
+
+    <!-- ===================== FAQ ACCORDION SECTION ===================== -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="section-header-centered reveal-on-scroll">
+                <div class="section-tag-wrapper centered">
+                    <span class="gold-line"></span>
+                    <span class="section-tag-text text-gold">Questions</span>
+                    <span class="gold-line"></span>
+                </div>
+                <h2 class="section-title centered">Frequently Asked <span class="text-gold">Questions</span></h2>
+                <p class="section-subtitle">We have compiled answers to common questions about booking, deliverables, and customization.</p>
+            </div>
+
+            <div class="faq-container reveal-on-scroll">
+                <!-- FAQ Item 1 -->
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>How far in advance should we book?</span>
+                        <div class="faq-icon-box"><i class="fas fa-plus"></i></div>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner">
+                            For luxury weddings, we suggest booking 6 to 12 months in advance to secure your dates. For baby shoots and portrait sessions, 2 to 4 weeks is generally sufficient.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 2 -->
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Do you travel for destination events?</span>
+                        <div class="faq-icon-box"><i class="fas fa-plus"></i></div>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner">
+                            Yes! We cover destination weddings and events across India and internationally. Travel and accommodation coordinates are added to the custom invoice estimate.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 3 -->
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>What is the delivery time for final deliverables?</span>
+                        <div class="faq-icon-box"><i class="fas fa-plus"></i></div>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner">
+                            Edited digital galleries are delivered within 2-3 weeks. Leather-bound prints and video packages take 4-6 weeks to compile, color grade, and package.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 4 -->
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Can we customize packages?</span>
+                        <div class="faq-icon-box"><i class="fas fa-plus"></i></div>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner">
+                            Absolutely. Every client milestone is unique. We can tailor session durations, album prints, and crew size to fit your custom budget and event timeline.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 5 -->
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Do you provide RAW unedited files?</span>
+                        <div class="faq-icon-box"><i class="fas fa-plus"></i></div>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner">
+                            RAW files are not included in standard packages as we consider color grading and retouching essential to our brand styling. However, they can be purchased separately as an add-on.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 6 -->
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>What happens if it rains during an outdoor shoot?</span>
+                        <div class="faq-icon-box"><i class="fas fa-plus"></i></div>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner">
+                            We monitor weather forecasts closely. If rain prevents outdoor shoots, we can coordinate an indoor studio shoot or reschedule the session to a mutually convenient date at no extra charge.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== FOOTER ===================== -->
+    <footer class="luxury-footer">
+        <div class="container footer-container">
+            <div class="footer-grid">
+                <!-- Branding info -->
+                <div class="footer-col branding">
+                    <a href="index.html" class="footer-logo">
+                        <span class="logo-v">V</span><span class="logo-text">IVEK</span>
+                        <span class="logo-subtitle">PHOTOGRAPHY</span>
+                    </a>
+                    <p class="footer-desc">
+                        A high-end international photography brand creating stunning imagery that stands the test of time. 
+                    </p>
+                    <div class="footer-socials">
+                        <a href="https://facebook.com" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://wa.me/919390262788" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                        <a href="mailto:vivekvakapalli23@gmail.com" aria-label="Email"><i class="far fa-envelope"></i></a>
+                    </div>
+                </div>
+
+                <!-- Navigation Quick Links -->
+                <div class="footer-col links">
+                    <h4 class="footer-title">Quick Navigation</h4>
+                    <ul class="footer-links-list">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="index.html#reviews">Reviews</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Studio Hours -->
+                <div class="footer-col hours">
+                    <h4 class="footer-title">Studio Hours</h4>
+                    <ul class="footer-hours-list">
+                        <li><span class="day">Monday - Friday:</span> <span class="time">09:00 AM - 08:00 PM</span></li>
+                        <li><span class="day">Saturday:</span> <span class="time">10:00 AM - 06:00 PM</span></li>
+                        <li><span class="day">Sunday:</span> <span class="time">By Appointment Only</span></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Copyright area -->
+            <div class="footer-bottom">
+                <p class="copyright-text">
+                    &copy; 2026 Vivek Photography. All Rights Reserved. Designed for premium cinematic luxury.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ===================== FLOATING WHATSAPP WIDGET ===================== -->
+    <a href="https://wa.me/919390262788?text=Hello%20Vivek%20Photography,%20I'd%20love%20to%20inquire%20about%20booking%20a%20shoot!" target="_blank" class="whatsapp-float" aria-label="Chat with Vivek on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+        <span class="tooltip-text">Chat with Vivek</span>
+    </a>
+
+    <!-- ===================== JS SCRIPTS ===================== -->
+    <script src="script.js"></script>
+</body>
+</html>
